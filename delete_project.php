@@ -18,6 +18,8 @@ if(isset($_GET['folder'])&&isset($_GET['action'])) {
 		if($arr[$i]['title'] == $project_name) {
 
 			unset($arr[$i]);
+
+			$arr = array_values($arr);
 		}
 	}
 
